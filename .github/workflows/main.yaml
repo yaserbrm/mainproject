@@ -28,7 +28,7 @@ jobs:
            context: .
            file: ./Dockerfile
            push: true
-           tags: ${{ secrets.DOCKERHUB_USERNAME }}/mainproject:latest   ## name of the repository in n
+           tags: ${{ secrets.DOCKERHUB_USERNAME }}/mainproject:latest   
   deploy:
     needs: build
     runs-on: ubuntu-latest
