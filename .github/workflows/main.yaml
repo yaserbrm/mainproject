@@ -12,7 +12,7 @@ jobs:
        -
          name: Checkout
          uses: actions/checkout@v3
-       -.
+       -
          name: Login to Docker Hub
          uses: docker/login-action@v2
          with:
@@ -39,9 +39,11 @@ jobs:
     - uses: appleboy/ssh-action@master
       name: Docker-Compose Remote Deployment
       with:
+        host: 192.168.1.8
+        port: 22
+        username: root
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
         script: |
-           chmod 400 $SSH_PRIVATE_KEY
-           ssh -o StrictHostKeyChecking=no -i $SSH_PRIVATE_KEY root@192.168.1.8 "
            cd /root/mainproject &&
            docker compose pull &&
            docker compose up -d"
