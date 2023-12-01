@@ -1,0 +1,7 @@
+ofogh gostar | افق گستر | بازسازی | راه و ساختمان | هاشمی
+
+
+"export": "next export",
+    "serve": "npx serve out",
+    "pm2": "pm2 serve out --no-daemon",
+    "http": "http-server out"

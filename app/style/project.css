@@ -1,0 +1,18 @@
+.cardSectionBox{
+
+}
+/* .checkbox[type="radio"]:nth-child(1) */
+/* .checkbox + label{
+    color:#7E8285
+}
+.checkbox:checked + label{
+    color:#252525
+} */
+.list-item{
+    color:#7E8285
+}
+.list-item.active {
+    color:#252525
+    /* color:#7E8285  */
+  }
+

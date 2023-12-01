@@ -1,0 +1,202 @@
+.container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  /* overflow-x: hidden; */
+}
+
+.serviceCont {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sliderProductCard .productImg{
+  height:280px;
+}
+.sliderProductCard:nth-child(odd) .productImg{
+  height:250px;
+}
+.productCard  .productImg{
+  height:205.22px;
+}
+.productCard:nth-child(odd) .productImg{
+  height:166.16px;
+}
+/* .productCard  .productImg{
+  height:190px;
+}
+.productCard:nth-child(odd) .productImg{
+  height:140px;
+} */
+/* productCard */
+
+.cardSectionBox >div.pictureBox {
+  order:1;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.cardSectionBox >div.pictureBox>div>.num{
+  position:absolute;
+  top:0;
+  right:-40px
+}
+  /* num */
+
+.cardSectionBox >div.textBox{
+  order:2
+}
+.cardSectionBox:nth-child(even) >div.pictureBox {
+  /* background: red; */
+  order:1;
+  transform: rotateY(0deg);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+.cardSectionBox:nth-child(even) >div.pictureBox>div>.num{
+  transform: rotateY(0deg);
+  top:0;
+  right:-40px
+ 
+}
+.cardSectionBox:nth-child(even) >div.textBox{
+  order:2
+}
+.landingHeaderSlider .swiper-pagination-bullet{
+  width: 10px !important;
+  height: 10px !important;
+  background:transparent !important;
+  border:1px solid transparent  !important;
+  border:1px solid #fff  !important;
+  opacity:1 !important;
+
+}
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+ 
+  .serviceCont {
+    max-width: 640px;
+  }
+  .productCard  .productImg{
+    height:373px;
+  }
+  .productCard:nth-child(odd) .productImg{
+    height:310px;
+  }
+
+
+  .cardSectionBox >div.pictureBox {
+    order:1;
+    justify-content: end;
+  }
+  .cardSectionBox >div.pictureBox>div>.num{
+    transform: rotateY(0deg);
+    top: -28px;
+    right:-100px
+  }
+  .cardSectionBox >div.textBox{
+      order:2
+  }
+  .cardSectionBox:nth-child(even) >div.pictureBox {
+      order:2;
+      transform: rotateY(180deg);
+      justify-content: start;
+  }
+  .cardSectionBox:nth-child(even) >div.pictureBox>div>.num{
+    transform: rotateY(180deg);
+    top: -28px;
+    left:-100px
+  }
+  .cardSectionBox:nth-child(even) >div.textBox{
+      order:1
+  }
+  .landingHeaderSlider .swiper-pagination-bullet{
+    width: 10px !important;
+    height: 10px !important;
+    background:transparent !important;
+    border:1px solid transparent  !important;
+    border:1px solid #fff  !important;
+    opacity:1 !important;
+
+}
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .serviceCont {
+    max-width: 768px;
+  }
+
+}
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .serviceCont {
+    max-width: 1024px;
+  }
+  
+}
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+  .serviceCont {
+    max-width: 1280px;
+  }
+  
+  
+}
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
+  
+  .serviceCont {
+    max-width: 1536px;
+  }
+  
+}
+@media (min-width: 1792px) {
+  .container {
+    max-width: 1792px;
+  }
+ 
+  .serviceCont {
+    max-width: 1792px;
+  }
+  
+ 
+}
+@media (min-width: 2048px) {
+  .container {
+    max-width: 2048px;
+  }
+
+  .serviceCont {
+    max-width: 2048px;
+  }
+ 
+}
+@media (min-width: 2304px) {
+  .container {
+    max-width: 2304px;
+  }
+ 
+  .serviceCont {
+    max-width: 2304px;
+  }
+  
+}

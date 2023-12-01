@@ -1,0 +1,160 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+body{
+  direction: rtl;
+}
+
+@font-face {
+  font-family: IranYekanBlack;
+  src: url("../assets/font/iranYekan/iranyekan/WebFonts/fonts/woff/iranyekanwebblack.woff") format("woff");
+}
+@font-face {
+  font-family: IranYekanExtrablack;
+  src: url("../assets/font/iranYekan/iranyekan/WebFonts/fonts/woff/iranyekanwebextrablack.woff") format("woff");
+}
+@font-face {
+  font-family: IranYekanExtrabold;
+  src: url("../assets/font/iranYekan/iranyekan/WebFonts/fonts/woff/iranyekanwebextrabold.woff") format("woff");
+}
+@font-face {
+  font-family: IranYekanBold;
+  src: url("../assets/font/iranYekan/iranyekan/WebFonts/fonts/woff/iranyekanwebbold.woff") format("woff");
+}
+@font-face {
+  font-family: IranYekanLight;
+  src: url("../assets/font/iranYekan/iranyekan/WebFonts/fonts/woff/iranyekanweblight.woff") format("woff");
+}
+@font-face {
+  font-family: IranYekanMedium;
+  src: url("../assets/font/iranYekan/iranyekan/WebFonts/fonts/woff/iranyekanwebmedium.woff") format("woff");
+}
+@font-face {
+  font-family: IranYekanRegular;
+  src: url("../assets/font/iranYekan/iranyekan/WebFonts/fonts/woff/iranyekanwebregular.woff") format("woff");
+}
+@font-face {
+  font-family: IranYekanThin;
+  src: url("../assets/font/iranYekan/iranyekan/WebFonts/fonts/woff/iranyekanwebthin.woff") format("woff");
+}
+
+
+
+@font-face {
+  font-family: MorabbaUltraLight;
+  src: url("../assets/font/moradda/Morabba_Pro/webfont/fonts/woff2/Morabba-UltraLight.woff2") format("woff2");
+}
+@font-face {
+  font-family: MorabbaLight;
+  src: url("../assets/font/moradda/Morabba_Pro/webfont/fonts/woff2/Morabba-Light.woff2") format("woff2");
+}
+@font-face {
+  font-family: MorabbaHeavy;
+  src: url("../assets/font/moradda/Morabba_Pro/webfont/fonts/woff2/Morabba-Heavy.woff2") format("woff2");
+}
+@font-face {
+  font-family: MorabbaBold;
+  src: url("../assets/font/moradda/Morabba_Pro/webfont/fonts/woff2/Morabba-Bold.woff2") format("woff2");
+}
+@font-face {
+  font-family: MorabbaMedium;
+  src: url("../assets/font/moradda/Morabba_Pro/webfont/fonts/woff2/Morabba-Medium.woff2") format("woff2");
+}
+@font-face {
+  font-family: MorabbaRegular;
+  src: url("../assets/font/moradda/Morabba_Pro/webfont/fonts/woff2/Morabba-Regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: MorabbaSemiBold;
+  src: url("../assets/font/moradda/Morabba_Pro/webfont/fonts/woff2/Morabba-SemiBold.woff2") format("woff2");
+}
+@font-face {
+  font-family: MorabbaBlack;
+  src: url("../assets/font/moradda/Morabba_Pro/webfont/fonts/woff2/Morabba-Black.woff2") format("woff2");
+}
+@font-face {
+  font-family: MorabbaExtraBold;
+  src: url("../assets/font/moradda/Morabba_Pro/webfont/fonts/woff2/Morabba-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: Holispay;
+  src: url("../assets/font/Holispay/Holispay/Holispay.woff2") format("woff2");
+}
+
+/* --------------------------------- */
+
+
+.tabs-container {
+  width: 400px;
+  margin: 20px auto;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tab {
+  cursor: pointer;
+  /* padding: 10px; */
+  /* margin-right: 10px; */
+  /* border: 1px solid #ddd; */
+  /* border-bottom: none; */
+  /* background-color: #f1f1f1; */
+  color:#7E8285;
+
+}
+
+.tab.active {
+  color: #101420;
+  /* background-color: #ddd; */
+}
+
+.tab-content {
+  /* border: 1px solid #ddd; */
+  /* padding: 10px; */
+}
+
+/* ---------------------------------- */
+.cardBox{
+  margin-top:10px
+}
+.cardBox .downNum{
+    display:block
+}
+.cardBox .upNum{
+  display:none
+
+}
+.cardBox:nth-child(odd){
+  margin-top:40px
+}
+.cardBox:nth-child(odd) .downNum{
+  display:none
+}
+.cardBox:nth-child(odd) .upNum{
+display:block
+
+}
