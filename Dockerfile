@@ -4,7 +4,7 @@ RUN apt install nano
 RUN apt install curl vim net-tools git build-essential -y 
 # RUN curl -sL https://deb.nodesource.com/setup_14.x | bash 
 # RUN apt install nodejs -y
-# RUN node -v
+# RUN node -vm
 # RUN npm -v
 # # install yarn
 RUN curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add -
